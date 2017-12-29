@@ -1,0 +1,57 @@
+body {
+  font-family: Ariel, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* button styling */
+.button {
+  background: coral;
+  padding: 1em 2em;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+/* hover-state - when the mouse hovers over the button, it changes color. */
+.button:hover {
+  background: rgb(103, 101, 101);
+}
+
+.modal {
+  display: none; 
+  /* the visible modal has these properties:  */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto; /* enables scroll bar is needed */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content {
+  background-color: #f4f4f4; /* of the modal itself */
+  margin: 20% auto; /* this affects how far down on the page the modal opens.  20% of the window, top and bottom.  auto is used for left and right because we want it to be in the middle of the page. */
+  padding: 20px;
+  
+  /* width is relative to the screen size or window, so the modal is 70% of the regular screen size. */
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17); 
+}
+
+/* the close button is an "X" */
+.closeBtn {
+  color: #ccc;
+  float: right; /* moves the "x" to the right side of the modal */
+  font-size: 30px;
+}
+
+/* hover-state and focus-state for close button */
+.closeBtn:hover, .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
