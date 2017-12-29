@@ -40,6 +40,8 @@ body {
   /* width is relative to the screen size or window, so the modal is 70% of the regular screen size. */
   width: 70%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17); 
+  animation-name: modalopen;
+  animation-duration: 1s;
 }
 
 /* the close button is an "X" */
@@ -54,4 +56,11 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* creating a keyframe
+This animates the opacity of the modal from 0 to 1 in 1 second. */
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity: 1}
 }
